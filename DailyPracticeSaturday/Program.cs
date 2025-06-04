@@ -4,8 +4,7 @@ namespace DailyPracticeSaturday
 {
     internal class Program
     {
-        //SKU = Stock Keeping Unit
-        //SKU value format: <product #>-<2-letter color code>-<size code>
+       
 
         static void Main(string[] args)
         {
@@ -23,9 +22,9 @@ namespace DailyPracticeSaturday
             Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("\t\tThe final battle stands between our hero who had quit his job as a piano teacher\n" +
-                "\t\t\t  cause he so badly wanted to become a good Software Developer\n\t\t\t    - and the monster, that we really don't know much about.\n" +
-                "\n\t\t\t\t Let the fight begin! Press enter to start:\n\n\n");
+            Console.WriteLine("\t\tThe final battle is between our hero, who quit his job as a piano teacher\n" +
+                "\t\t\t  because he so badly wanted to become a good Software Developer\n\t\t\t    - and the monster, about whom we know very little.\n" +
+                "\n\t\t\t\t Let the fight begin! Press Enter to start:\n\n\n");
             Console.ReadLine();
             do
 
@@ -38,7 +37,7 @@ namespace DailyPracticeSaturday
                     Console.WriteLine("\tThe hero attacks....");
 
                     Thread.Sleep(heroAttack.Next(1000, 6000));
-                    monsterDamage = heroAttack.Next(1, 10);
+                    monsterDamage = heroAttack.Next(1, 11);
                     monsterHealth -= monsterDamage;
 
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -67,7 +66,7 @@ namespace DailyPracticeSaturday
                     Console.WriteLine("\tThe monster attacks....");
 
                     Thread.Sleep(heroAttack.Next(1000, 6000));
-                    heroDamage = monsterAttack.Next(1, 10);
+                    heroDamage = monsterAttack.Next(1, 11);
                     heroHealth -= heroDamage;
 
 
